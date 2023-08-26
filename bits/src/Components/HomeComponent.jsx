@@ -31,7 +31,7 @@ export default function HomeComponent() {
             Actualmente en 4to año de la carrera.
         </h3>
         <br></br>
-        <u><a href = "test"><h1><li type="square">Proyectos.</li></h1></a></u>
+        <u><a href = "/projects"><h1><li type="square">Proyectos.</li></h1></a></u>
         <u><a href = "test"><h1><li type="square">Experiencia y Certificaciones.</li></h1></a></u>
         <h3>Un poco sobre mi...</h3>
       </HomeStyle>

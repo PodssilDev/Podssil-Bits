@@ -3,6 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import React, { Component } from "react";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
+import github from "./images/github.png";
 
 export default function ProjectCardComponent({id, img_url, titulo, descripcion, lenguaje, anio, url_repo}) {
   return (
@@ -31,7 +32,7 @@ export default function ProjectCardComponent({id, img_url, titulo, descripcion, 
           </ListGroup>
           <Card.Body>
             <Card.Link href={url_repo}>
-              Repositorio Github
+              <img src = {github} width = "30" height = "30"></img>
             </Card.Link>
           </Card.Body>
         </Card>
