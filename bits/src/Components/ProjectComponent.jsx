@@ -1,6 +1,4 @@
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import proyectos from "./jsons/projects.json";

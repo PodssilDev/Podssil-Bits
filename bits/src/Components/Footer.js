@@ -1,39 +1,54 @@
-import React from 'react';
-import {
-  FaInstagram,
-  FaGithub,
-  FaLinkedin
-} from 'react-icons/fa';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    return (
-      <FooterContainer>
-        <FooterWrap>
-          <SocialMedia>
-            <SocialMediaWrap>
-              <SocialLogo to ="https://github.com/PodssilDev">Copyright © PodssilDev 2023</SocialLogo>
-              <SocialIcons>
-                <SocialIconLink href='https://github.com/PodssilDev' target='_blank' aria-label='Github' rel='noopener noreferrer' >
-                  <FaGithub/>
-                </SocialIconLink>
-                <SocialIconLink href='https://github.com/PodssilDev' target='_blank' aria-label='Github' rel='noopener noreferrer' >
+  return (
+    <FooterContainer>
+      <FooterWrap>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to="https://github.com/PodssilDev">
+              Copyright © PodssilDev 2023
+            </SocialLogo>
+            <SocialIcons>
+              <SocialIconLink
+                href="https://github.com/PodssilDev"
+                target="_blank"
+                aria-label="Github"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.linkedin.com/in/john-serrano-carrasco-567b3926a/"
+                target="_blank"
+                aria-label="Linkedin"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin></FaLinkedin>
+              </SocialIconLink>
+              <SocialIconLink
+                href="mailto:john.serrano@usach.cl"
+                target="_blank"
+                aria-label="Mail"
+                rel="noopener noreferrer"
+              >
+                <FaEnvelope />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
+    </FooterContainer>
+  );
+};
 
-                  <FaLinkedin></FaLinkedin>
-                </SocialIconLink>
-              </SocialIcons>
-            </SocialMediaWrap>
-          </SocialMedia>
-        </FooterWrap>
-      </FooterContainer>
-    );
-  };
-  
-  export default Footer;
-  
+export default Footer;
+
 export const FooterContainer = styled.footer`
-  background-color: #1D1D23;
+  background-color: #1d1d23;
 `;
 
 export const FooterWrap = styled.div`
@@ -62,7 +77,6 @@ export const SocialMediaWrap = styled.div`
     flex-direction: column;
   }
 `;
-
 
 export const SocialLogo = styled(Link)`
   color: #fff;
